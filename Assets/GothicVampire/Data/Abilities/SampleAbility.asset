@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f911fbde29714ef288b89aacb9fd0240, type: 3}
+  m_Name: SampleAbility
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Abilities.AbilityData
+  _displayName: 
+  _icon: {fileID: 0}
+  _cooldown:
+    _duration: 5
+    _readyOnInitialize: 1
+    _evtReady:
+      m_PersistentCalls:
+        m_Calls: []
+  _consumeRequirementsOnTargeting: 0
+  _requirements:
+  - rid: 519144384191267055
+  - rid: 519144384191267063
+  _targetingScheme:
+    rid: 519144427270701452
+  _effect:
+    rid: 519144404167951028
+  _tags:
+  - {fileID: 11400000, guid: bd557536d0b6b91459fa6c57535dc853, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 519144384191267055
+      type: {class: HasBlood, ns: GothicVampire.Abilities.Requirements, asm: GothicVampire}
+      data:
+        _value: 5
+    - rid: 519144384191267063
+      type: {class: HasCurrency, ns: GothicVampire.Abilities.Requirements, asm: GothicVampire}
+      data:
+        _currencies:
+        - _type: {fileID: 11400000, guid: 108889e44624f91479162ed26b0fde74, type: 2}
+          _value: 1
+          _max: 0
+    - rid: 519144404167951028
+      type: {class: AddCurrencyToFaction, ns: GothicVampire.Abilities.Effects, asm: GothicVampire}
+      data:
+        _descriptionTemplate: 
+        _handleMultipleTargetsIndividually: 0
+        _currencies:
+        - _type: {fileID: 11400000, guid: e98b10c076a5ebb469d3d0734fa2a438, type: 2}
+          _value: 3
+          _max: 0
+    - rid: 519144427270701452
+      type: {class: SelfFaction, ns: GothicVampire.Abilities.TargetingSchemes, asm: GothicVampire}
+      data: 

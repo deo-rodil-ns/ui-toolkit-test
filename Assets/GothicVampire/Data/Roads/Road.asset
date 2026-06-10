@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57d3af82710d0041a0d7b5bf4e10422, type: 3}
+  m_Name: Road
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Roads.RoadData
+  _displayName: Dirt Road
+  _description: Roads attached to buildings.
+  _lore: 
+  _ghost: {fileID: 4376754842560949874, guid: 77c6ace628ebf7e4f90e3d24e541c0b8, type: 3}
+  _gridSize: {x: 1, y: 1}
+  _infoIcon: {fileID: 21300000, guid: db7f5037a75658142b359db68918238b, type: 3}
+  _constructionIcon: {fileID: 21300000, guid: 0a9bc9f3a8f9b65448085ee59b1a3e10, type: 3}
+  _constructionCodeColor: {r: 0.03137255, g: 0.14901961, b: 0, a: 1}
+  _upgradable: 0
+  _tiers:
+  - _nameOverride: Dirt Road
+    _roadMaterials:
+    - _connection: 0
+      _material: {fileID: 2100000, guid: edc72feadebb05641bffae9fd87c451d, type: 2}
+    - _connection: 1
+      _material: {fileID: 2100000, guid: f423d71fadfd3884fa27f6e4e6672ac1, type: 2}
+    - _connection: 2
+      _material: {fileID: 2100000, guid: 5f4f437f441e7e14882c287957ac592c, type: 2}
+    - _connection: 3
+      _material: {fileID: 2100000, guid: a00691b92cae48b4da5b180fe76e891f, type: 2}
+    - _connection: 4
+      _material: {fileID: 2100000, guid: 26ca50d66f5a3bb4c84aecc2f635d705, type: 2}
+    - _connection: 5
+      _material: {fileID: 2100000, guid: df01020e4eccdee4eae7223ca111d628, type: 2}
+    - _connection: 6
+      _material: {fileID: 2100000, guid: ff0ce3ba8cd9ffd49b6945f94b7a3386, type: 2}
+    - _connection: 7
+      _material: {fileID: 2100000, guid: e073a1cb79226d84f9686724517a742f, type: 2}
+    - _connection: 8
+      _material: {fileID: 2100000, guid: 7472703e073de3e43bf0efa7ca7331e9, type: 2}
+    - _connection: 9
+      _material: {fileID: 2100000, guid: 59caa32eb3fb84842a0bfc6239956ce3, type: 2}
+    - _connection: 10
+      _material: {fileID: 2100000, guid: 5d76e70c29aa7c5419f05a1d35f00bc0, type: 2}
+    _buildCost:
+    - _type: {fileID: 11400000, guid: 108889e44624f91479162ed26b0fde74, type: 2}
+      _value: 1
+      _max: 0
+    _effect:
+      rid: 5755375223600054786
+  - _nameOverride: Paved Road
+    _roadMaterials:
+    - _connection: 0
+      _material: {fileID: 0}
+    _buildCost:
+    - _type: {fileID: 11400000, guid: 108889e44624f91479162ed26b0fde74, type: 2}
+      _value: 5
+      _max: 0
+    _effect:
+      rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5755375223600054786
+      type: {class: BasicRoadEffect, ns: GothicVampire.Roads.Effects, asm: GothicVampire}
+      data:
+        _roadData: {fileID: 0}

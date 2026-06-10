@@ -1,0 +1,4 @@
+Bread = #008722
+Fabric = 393100
+Garlic = 550087
+Wood = 401c00

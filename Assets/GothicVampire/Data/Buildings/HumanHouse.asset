@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec74284671444f8b256bb8820e40946, type: 3}
+  m_Name: HumanHouse
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Building.BuildingData
+  _displayName: Human House
+  _description: Housing space made available for the villager. Increases village
+    capacity based on tier.
+  _lore: A peaceful small but humble house. Home to humans and works as their place
+    of recuperation, growth, and simply a place to stay. They say that homes are
+    one of the most important environments of growth to humans.
+  _ghost: {fileID: 6974012916159135596, guid: 6d66a6e49d7e54c4bae2a0d47597ec20, type: 3}
+  _gridSize: {x: 1, y: 1}
+  _hudType: 2
+  _infoIcon: {fileID: 21300000, guid: 67084b11db6fb9e498b14cd72fa5ed20, type: 3}
+  _constructionIcon: {fileID: 21300000, guid: 67084b11db6fb9e498b14cd72fa5ed20, type: 3}
+  _constructionCodeColor: {r: 0.21960784, g: 0.3647059, b: 0.5568628, a: 1}
+  _canAssignJobs: 0
+  _upgradable: 1
+  _shouldDeactivateEffectOnUpgrade: 0
+  _canHouseVillagers: 1
+  _tiers:
+  - {fileID: 11400000, guid: 80dd0dd119d37ea41bd91b49c0a4370f, type: 2}
+  - {fileID: 11400000, guid: 217d20f2f02591649b7a4ba86689fea6, type: 2}

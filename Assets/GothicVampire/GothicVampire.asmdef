@@ -1,0 +1,24 @@
+{
+    "name": "GothicVampire",
+    "rootNamespace": "GothicVampire",
+    "references": [
+        "Sylpheed",
+        "Sylpheed.Math",
+        "Unity.InputSystem",
+        "Unity.Cinemachine",
+        "MackySoft.SerializeReferenceExtensions",
+        "UniTask",
+        "Unity.TextMeshPro",
+        "TNRD.SerializableInterface",
+        "UnityUIExtensions"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

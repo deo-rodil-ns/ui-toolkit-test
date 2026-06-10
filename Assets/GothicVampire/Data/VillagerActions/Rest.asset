@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20af9e886aa1ade4a8d3a249d8031890, type: 3}
+  m_Name: Rest
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Villagers.VillagerRestAction
+  _maxScore: 0.5
+  _scoreModifier: 0.15
+  _requiredNeeds:
+  - _needRequired: {fileID: 11400000, guid: 01f373af52d980b4ab4a2282c48a40eb, type: 2}
+    threshold: 15
+    pointPerPointsBelowThreshold: 3
+  - _needRequired: {fileID: 11400000, guid: 0af44f60700f4ff45bf7c494477f2ba5, type: 2}
+    threshold: 15
+    pointPerPointsBelowThreshold: 3
+  _villagerRestSpeed: 0.5

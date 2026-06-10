@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3509f266e6c6442d835b6803b7a2a14e, type: 3}
+  m_Name: BloodBank-T1
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Buildings.BuildingTierSO
+  _building: {fileID: 11400000, guid: 1c882fc548fa5db4fb07a6076f66ba70, type: 2}
+  _tier: 1
+  _nameOverride: 
+  _model: {fileID: 6046003213719147457, guid: 0ef1b01ba16e185429fc95bf5532ba4b, type: 3}
+  _constructionModel: {fileID: 6046003213719147457, guid: 15e44250bc02b0249b6b10605ff78ea2, type: 3}
+  _buildTime: 20
+  _buildCost:
+  - _type: {fileID: 11400000, guid: 108889e44624f91479162ed26b0fde74, type: 2}
+    _value: 10
+    _max: Infinity
+  - _type: {fileID: 11400000, guid: 7de480136a5272348b0cc17918b34979, type: 2}
+    _value: 10
+    _max: Infinity
+  _prerequisites:
+    _unlockSourceIfSatisfied: 0
+    _technologies: []
+    _unlockables: []
+    _customs: []
+    _evtSatisfied:
+      m_PersistentCalls:
+        m_Calls: []
+    _evtProgressUpdated:
+      m_PersistentCalls:
+        m_Calls: []
+  _unlockablesOnBuild: []
+  _jobSlots: 10
+  _effect:
+    rid: 6693326027247845747
+  references:
+    version: 2
+    RefIds:
+    - rid: 6693326027247845747
+      type: {class: AddProduction, ns: GothicVampire.Buildings.Effects, asm: GothicVampire}
+      data:
+        _order:
+          _cycle: {fileID: 11400000, guid: bd774cfa4f5b4ac49a3afc837360a1ee, type: 2}
+          _input: []
+          _output:
+          - _type: {fileID: 11400000, guid: 7de480136a5272348b0cc17918b34979, type: 2}
+            _value: 1
+            _max: 0
+          _priority: 0
+        _lockJobUntilFirstOrderConclusion: 1
+        _unrestPerOrder:
+          _category: {fileID: 11400000, guid: 833ed9db7911c7347944233d742c37b0, type: 2}
+          _value: 1
+          _applyImmediately: 0
+          _applyOnResolve: 1
+          _revertOnRemove: 0
+          _removeOnResolve: 1
+          _persistent: 0

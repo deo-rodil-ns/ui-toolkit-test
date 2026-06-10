@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0d49e3205c49cfa7a06b63de29ce3a, type: 3}
+  m_Name: Blood
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Cycles.FactionCycleActionSet
+  _cycle: {fileID: 11400000, guid: bd774cfa4f5b4ac49a3afc837360a1ee, type: 2}
+  _tasks:
+  - rid: 7969142058168352860
+  references:
+    version: 2
+    RefIds:
+    - rid: 7969142058168352860
+      type: {class: ResolveProductionBatch, ns: GothicVampire.Cycles.Actions, asm: GothicVampire}
+      data: 

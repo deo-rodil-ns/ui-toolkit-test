@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec74284671444f8b256bb8820e40946, type: 3}
+  m_Name: TailorsShop
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Building.BuildingData
+  _displayName: Tailor's Shop
+  _description: A shop to buy fabric. A luxury for many people in the village.
+  _lore: Other than one of the most popular choices of ingredients of cooking. It
+    seems to add more flavor to things outside food. Funnily enough, there are rumors
+    that some creatures are weak to this ingredient.
+  _ghost: {fileID: 2430103388217709521, guid: d21c1d341ddc2234b9e2d4e417850416, type: 3}
+  _gridSize: {x: 1, y: 1}
+  _hudType: 1
+  _infoIcon: {fileID: 21300000, guid: 18b0cd9d485e5704fbc6354cbb31279e, type: 3}
+  _constructionIcon: {fileID: 21300000, guid: 18b0cd9d485e5704fbc6354cbb31279e, type: 3}
+  _constructionCodeColor: {r: 0.37254903, g: 0.3372549, b: 0.20784314, a: 1}
+  _canAssignJobs: 1
+  _upgradable: 0
+  _shouldDeactivateEffectOnUpgrade: 1
+  _tiers:
+  - {fileID: 11400000, guid: ffefd6fca3d5faf4e92a49c2f63eb798, type: 2}

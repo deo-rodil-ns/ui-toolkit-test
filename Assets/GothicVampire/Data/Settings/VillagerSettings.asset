@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f2e413480f4c40987a4fa567ea1515, type: 3}
+  m_Name: VillagerSettings
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Villagers.VillagerSettings
+  _villagerPrefab: {fileID: 2664156709632869996, guid: 67a0e3f781014a74391abaa170facbe6, type: 3}
+  _villagerTiers:
+  - {fileID: 11400000, guid: bb1d06964d5918a44be4131a0c44f0c6, type: 2}
+  - {fileID: 11400000, guid: 077cf6e51dcf5d74da41aff41710ca5a, type: 2}
+  _maleNames: {fileID: 4900000, guid: da41ec744a308fb48b674e2a1d7dc25d, type: 3}
+  _femaleNames: {fileID: 4900000, guid: 2d7fa30d777b0f147ae8839199f50086, type: 3}
+  _surnames: {fileID: 4900000, guid: 1d08de45bd973e6449481465752d60e3, type: 3}
+  _numInitialVillagers: 0
+  _initialVillager: {fileID: 11400000, guid: bb1d06964d5918a44be4131a0c44f0c6, type: 2}
+  _paidUpkeepUnrest:
+    _category: {fileID: 11400000, guid: 9b3ab37b8c9ef734294bc32fb68b4a47, type: 2}
+    _value: -1
+    _applyImmediately: 0
+    _applyOnResolve: 1
+    _revertOnRemove: 0
+    _removeOnResolve: 1
+    _persistent: 0
+  _unpaidUpkeepUnrest:
+    _category: {fileID: 11400000, guid: 9b3ab37b8c9ef734294bc32fb68b4a47, type: 2}
+    _value: 2
+    _applyImmediately: 0
+    _applyOnResolve: 1
+    _revertOnRemove: 0
+    _removeOnResolve: 1
+    _persistent: 0

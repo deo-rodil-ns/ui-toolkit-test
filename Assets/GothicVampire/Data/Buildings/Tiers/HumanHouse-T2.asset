@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3509f266e6c6442d835b6803b7a2a14e, type: 3}
+  m_Name: HumanHouse-T2
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Buildings.BuildingTierSO
+  _building: {fileID: 11400000, guid: 63df2f38af5d99b46851fc70623e965f, type: 2}
+  _tier: 2
+  _nameOverride: 
+  _model: {fileID: 7798734921307948969, guid: 42f0e81e2c1d55c4e83fc0816dff1059, type: 3}
+  _constructionModel: {fileID: 7798734921307948969, guid: ce6aea1e67305af4184fd6af59ac6d4c, type: 3}
+  _buildTime: 5
+  _buildCost:
+  - _type: {fileID: 11400000, guid: 108889e44624f91479162ed26b0fde74, type: 2}
+    _value: 10
+    _max: 0
+  _prerequisites:
+    _unlockSourceIfSatisfied: 1
+    _technologies: []
+    _unlockables: []
+    _customs: []
+    _evtSatisfied:
+      m_PersistentCalls:
+        m_Calls: []
+    _evtProgressUpdated:
+      m_PersistentCalls:
+        m_Calls: []
+  _unlockablesOnBuild: []
+  _jobSlots: 0
+  _effect:
+    rid: 6693326027247845748
+  references:
+    version: 2
+    RefIds:
+    - rid: 6693326027247845748
+      type: {class: AddVillager, ns: GothicVampire.Buildings.Effects, asm: GothicVampire}
+      data:
+        _villagerData: {fileID: 11400000, guid: 077cf6e51dcf5d74da41aff41710ca5a, type: 2}
+        _numVillagers: 3

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f784426bd83bfe4098c8feae668252b, type: 3}
+  m_Name: RoadSettings
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Roads.RoadSettings
+  _sellRate: 0.5
+  _roadPrefab: {fileID: 6072375097026194804, guid: 6aa961a74ebd06f4a806e58ce938ed03, type: 3}
+  _purchasableRoads:
+  - {fileID: 11400000, guid: 00d374cb18a87c64598ddeb9767eceee, type: 2}

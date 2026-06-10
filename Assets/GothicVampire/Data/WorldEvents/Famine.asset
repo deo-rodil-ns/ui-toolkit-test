@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2515453caec30b047b98dc3ba9793ab7, type: 3}
+  m_Name: Famine
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.WorldEvents.WorldEventData
+  _displayName: Famine
+  _tag: {fileID: 11400000, guid: 8aec37714bbdaf047b0517b6adebae16, type: 2}
+  _showResult: 1
+  _description: Severe food shortages causing hunger, unrest, and mass loss.
+  _triggers:
+  - _currencies: []
+    _enableCycleTrigger: 1
+    _triggeredOnInterval: 1
+    _cycleTriggered: 1
+    _cycleCooldown: 5
+  _effects:
+  - _showBanner: 1
+    _durationInCycles: 2
+    _unrestSource:
+      _category: {fileID: 11400000, guid: a52047ddd7a32c94baac9e205d9aabc6, type: 2}
+      _value: 25
+      _applyImmediately: 1
+      _applyOnResolve: 0
+      _revertOnRemove: 1
+      _removeOnResolve: 0
+      _persistent: 1

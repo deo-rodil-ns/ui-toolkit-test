@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6974012916159135596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6980102709949324490}
+  - component: {fileID: 5886309170857281973}
+  - component: {fileID: -7706412428236602487}
+  - component: {fileID: 8928119897325453238}
+  - component: {fileID: 6926083145504837835}
+  - component: {fileID: -7949450170220851129}
+  m_Layer: 0
+  m_Name: Building
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6980102709949324490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974012916159135596}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5886309170857281973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974012916159135596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d700538acd64b94b2c8e439ef8c0b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Building.Building
+  _settings: {fileID: 11400000, guid: b412754a4af8c2a42a36b682af80bbb4, type: 2}
+  _evtSold:
+    m_PersistentCalls:
+      m_Calls: []
+  _evtRelocated:
+    m_PersistentCalls:
+      m_Calls: []
+  _evtUpgraded:
+    m_PersistentCalls:
+      m_Calls: []
+  _evtRemoved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8928119897325453238}
+        m_TargetAssemblyTypeName: GothicVampire.Player.Inputs.Entity.SelectableEntity,
+          GothicVampire
+        m_MethodName: Unselect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-7706412428236602487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974012916159135596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fc1130581a409a97f8f2b31bc7827c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Buildings.BuildingConstruction
+  _evtStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  _evtDone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -7949450170220851129}
+        m_TargetAssemblyTypeName: GothicVampire.Buildings.BuildingVisualEffects,
+          GothicVampire
+        m_MethodName: Bounce
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _evtInterrupted:
+    m_PersistentCalls:
+      m_Calls: []
+  _evtProgressUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  _evtStateUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8928119897325453238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974012916159135596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfeb33102de6384293e98ee654d3146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Player.Inputs.Entity.SelectableEntity
+  _type: 1
+  _doubleClickTimeCheck: 0.25
+--- !u!114 &6926083145504837835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974012916159135596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b652e26ce20710d4588edebbc8161c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Grids.GridEntityComponent
+  _type: 1
+--- !u!114 &-7949450170220851129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974012916159135596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc625eb7d1ecff4a8e047b9f32d2fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Buildings.BuildingVisualEffects
+  _duration: 0.4

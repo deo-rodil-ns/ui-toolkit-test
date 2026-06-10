@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24c24431e8a4468a110143357d6d225, type: 3}
+  m_Name: Burgher
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Villagers.VillagerData
+  _displayName: Burgher
+  _tier: 2
+  _upkeepCost:
+  - _type: {fileID: 11400000, guid: b3641b7f33b118841ab52764b9bcf241, type: 2}
+    _value: 1
+    _max: 0
+  _icon: {fileID: 21300000, guid: 17c99654d74f3ec4a8802c5ade240cee, type: 3}
+  _defaultModel: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  _models:
+  - _building: {fileID: 11400000, guid: 1c882fc548fa5db4fb07a6076f66ba70, type: 2}
+    _model: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  - _building: {fileID: 11400000, guid: 4c8cb4a50a0e272459d6bd9a465ac7f3, type: 2}
+    _model: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  - _building: {fileID: 11400000, guid: 5a4cee663aaf01d40ad3bd2d61a3a06a, type: 2}
+    _model: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  - _building: {fileID: 11400000, guid: 63df2f38af5d99b46851fc70623e965f, type: 2}
+    _model: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  - _building: {fileID: 11400000, guid: d622e7299a130284d8e954918111145a, type: 2}
+    _model: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  - _building: {fileID: 11400000, guid: fd16b6913de5a5b4ead63135237a30d7, type: 2}
+    _model: {fileID: 5629986622555353526, guid: aaff03b9f5b9957429a15893d4e172d3, type: 3}
+  _productionOutputModifier: 1
+  _villagerNeeds:
+  - _type: {fileID: 11400000, guid: 0af44f60700f4ff45bf7c494477f2ba5, type: 2}
+    _maxValue: 100
+    _rechargeSpeed: 1.25
+    _decayRate: 0.25
+    _value: 100
+  - _type: {fileID: 11400000, guid: 01f373af52d980b4ab4a2282c48a40eb, type: 2}
+    _maxValue: 100
+    _rechargeSpeed: 1.25
+    _decayRate: 0.25
+    _value: 100
+  - _type: {fileID: 11400000, guid: f1d28c79b006ae449a93e2bdddb29a5b, type: 2}
+    _maxValue: 100
+    _rechargeSpeed: 1.25
+    _decayRate: 0.25
+    _value: 0
+  _villagerActions:
+  - {fileID: 11400000, guid: 9dff1e6e14c0e5c44aca4fd4fab4d453, type: 2}
+  - {fileID: 11400000, guid: c42207db0ae960d4cb6e191ae1ca89b7, type: 2}
+  - {fileID: 11400000, guid: 321b19480b898964fb711a9cf3f004f3, type: 2}

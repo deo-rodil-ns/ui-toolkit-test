@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364723087cb7453d8facf11815582260, type: 3}
+  m_Name: BuildingSettings
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Building.BuildingSettings
+  _sellRate: 0.5
+  _buildingPrefab: {fileID: 5886309170857281973, guid: bd1fb7af4e066c044b1cd9ffebc84757, type: 3}
+  _purchasableBuildings:
+  - {fileID: 11400000, guid: 63df2f38af5d99b46851fc70623e965f, type: 2}
+  - {fileID: 11400000, guid: d622e7299a130284d8e954918111145a, type: 2}
+  - {fileID: 11400000, guid: 4c8cb4a50a0e272459d6bd9a465ac7f3, type: 2}
+  - {fileID: 11400000, guid: 5a4cee663aaf01d40ad3bd2d61a3a06a, type: 2}
+  - {fileID: 11400000, guid: fd16b6913de5a5b4ead63135237a30d7, type: 2}
+  - {fileID: 11400000, guid: 1c882fc548fa5db4fb07a6076f66ba70, type: 2}

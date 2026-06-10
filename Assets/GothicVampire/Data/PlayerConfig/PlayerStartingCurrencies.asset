@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae6a8707b974b39950f59922dd1ef9a, type: 3}
+  m_Name: PlayerStartingCurrencies
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Resource.ResourceCollection
+  _currencies:
+  - _type: {fileID: 11400000, guid: 108889e44624f91479162ed26b0fde74, type: 2}
+    _value: 1000
+    _max: 0
+  - _type: {fileID: 11400000, guid: b3641b7f33b118841ab52764b9bcf241, type: 2}
+    _value: 22
+    _max: 0
+  - _type: {fileID: 11400000, guid: 8f93cc5840ffd6b43adf0a41db416241, type: 2}
+    _value: 100
+    _max: 0
+  - _type: {fileID: 11400000, guid: e98b10c076a5ebb469d3d0734fa2a438, type: 2}
+    _value: 100
+    _max: 0
+  - _type: {fileID: 11400000, guid: 7de480136a5272348b0cc17918b34979, type: 2}
+    _value: 100
+    _max: 0

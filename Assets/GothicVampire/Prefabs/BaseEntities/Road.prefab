@@ -1,0 +1,310 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5039483370856043571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6646669260659627997}
+  - component: {fileID: 2796726171650183684}
+  - component: {fileID: 1909719204265975053}
+  - component: {fileID: 6072375097026194804}
+  - component: {fileID: 5127907083343387271}
+  - component: {fileID: 6261812818362920862}
+  - component: {fileID: 1645416413698759511}
+  m_Layer: 0
+  m_Name: Road
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6646669260659627997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.95969, y: -0.00001, z: 10.40687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8100715414990420446}
+  - {fileID: 6422944325439318496}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2796726171650183684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b652e26ce20710d4588edebbc8161c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Grids.GridEntityComponent
+  _type: 3
+--- !u!114 &1909719204265975053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfeb33102de6384293e98ee654d3146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Player.Inputs.Entity.SelectableEntity
+  _type: 3
+--- !u!114 &6072375097026194804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6356766c4ca74024bbd32645dc0b7e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Roads.Road
+  _settings: {fileID: 11400000, guid: 7ce23d9b3ace7a64485dab28c619ae75, type: 2}
+  _evtSold:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1909719204265975053}
+        m_TargetAssemblyTypeName: GothicVampire.Player.Inputs.Entity.SelectableEntity,
+          GothicVampire
+        m_MethodName: Unselect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _evtUpgraded:
+    m_PersistentCalls:
+      m_Calls: []
+  _roadMaterialSystem: {fileID: 5127907083343387271}
+--- !u!114 &5127907083343387271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9629158d58e3b9a438ce6868bc78ddd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.Roads.RoadMaterialSystem
+  _meshRenderer: {fileID: 5289984679585518223}
+  _isHighlightMaterial: 0
+  _south: 0
+  _north: 0
+  _east: 0
+  _west: 0
+--- !u!65 &6261812818362920862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.04449193, z: 0.70449066}
+  m_Center: {x: 0, y: 0.04555043, z: 0.0001373291}
+--- !u!114 &1645416413698759511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039483370856043571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa557cda1a11d94ba252c9a080b010a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GothicVampire::GothicVampire.RoadVisualInputEffects
+  _selectedHighlight: {fileID: 8872185191414145892}
+--- !u!1001 &6820799114487696907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6646669260659627997}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: edc72feadebb05641bffae9fd87c451d, type: 2}
+    - target: {fileID: 919132149155446097, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_Name
+      value: simple-plane
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+--- !u!23 &5289984679585518223 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+  m_PrefabInstance: {fileID: 6820799114487696907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6422944325439318496 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+  m_PrefabInstance: {fileID: 6820799114487696907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8638252344325545525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6646669260659627997}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d6bf7a5606ab164e974664bf39c8b10, type: 2}
+    - target: {fileID: 919132149155446097, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_Name
+      value: GreenHighlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+--- !u!4 &8100715414990420446 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+  m_PrefabInstance: {fileID: 8638252344325545525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8872185191414145892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c5e56ead07c7c4444ab68e9d0be9fd09, type: 3}
+  m_PrefabInstance: {fileID: 8638252344325545525}
+  m_PrefabAsset: {fileID: 0}
